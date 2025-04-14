@@ -82,7 +82,7 @@ if st.button("Predict"):
     scaler = StandardScaler()
     xtrain.iloc[:, continuous_cols] = scaler.fit_transform(x_train.iloc[:, continuous_cols])
 
-    explainer_shap = shap.TreeExplainer(model.predict_proba, xtrain)
+    explainer_shap = shap.TreeExplainer(model)
     
     # 获取SHAP值
     shap_values = explainer_shap.shap_values(pd.DataFrame(final_features_df,columns=feature_names))
