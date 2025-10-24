@@ -1,10 +1,11 @@
-xgboost
+xgboost==1.6.1
 lightgbm
-scikit-learn
+scikit-learn==1.2.2
 joblib 
 streamlit 
 numpy 
 pandas 
-shap
+shap==0.41.0
 matplotlib 
+
 StandardScaler
